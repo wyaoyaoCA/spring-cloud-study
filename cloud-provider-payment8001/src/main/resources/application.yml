@@ -1,21 +1,21 @@
 server:
   port: 8001
 
-spring:
-  application:
-    name: cloud-payment-service
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/spring-cloud-study?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: rootroot
+#spring:
+#  application:
+#    name: cloud-payment-service
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: org.gjt.mm.mysql.Driver
+#    url: jdbc:mysql://localhost:3306/spring-cloud-study?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: rootroot
 
-mybatis:
-  # 指定mapper配置文件的位置
-  mapper-locations: classpath:mapper/*.xml
-  # 配置别名，我们统一放在api模块的study.wyy.cloud.api.model包下
-  type-aliases-package: study.wyy.cloud.api.model
+#mybatis:
+#  # 指定mapper配置文件的位置
+#  mapper-locations: classpath:mapper/*.xml
+#  # 配置别名，我们统一放在api模块的study.wyy.cloud.api.model包下
+#  type-aliases-package: study.wyy.cloud.api.model
 
 eureka:
   client:
