@@ -14,7 +14,9 @@ import study.wyy.cloud.api.model.Payment;
 @RestController
 public class ConsumerController {
 
-    private final String PAYMENT_ADDRESS = "http://localhost:8001";
+    //private final String PAYMENT_ADDRESS = "http://localhost:8001";
+
+    private final String PAYMENT_ADDRESS = "http://cloud-payment-service";
 
     private final RestTemplate restTemplate;
 
