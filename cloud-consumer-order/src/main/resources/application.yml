@@ -15,4 +15,5 @@ eureka:
       # 设置与Eureka Server交互的地址  查询服务和注册服务都需要依赖这个地址
       #defaultZone: http://localhost:7001/eureka/
       # 将Eureka集群中的节点地址用逗号分隔的形式配置在yml
-      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
+      defaultZone: http://localhost:7001/eureka/
+      #defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
