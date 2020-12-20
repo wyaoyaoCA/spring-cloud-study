@@ -1,0 +1,40 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+## 配置一下超时时间，默认就是1s
+ribbon:
+  ReadTimeout: 8000
+  ConnnectTimeout: 5000
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+    PaymentHystrixService#testTimeout2(Integer):
+      fallback:
+        enabled: true
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon超时时间为准,为true,则超时以熔断时间为准
+          enabled: true
+        isolation:
+          #隔离策略，有THREAD和SEMAPHORE
+          #THREAD - 它在单独的线程上执行，并发请求受线程池中的线程数量的限制
+          #SEMAPHORE - 它在调用线程上执行，并发请求受到信号量计数的限制
+          #对比：https://www.cnblogs.com/java-synchronized/p/7927726.html
+          thread:
+            timeoutInMilliseconds: 4000
+
+
