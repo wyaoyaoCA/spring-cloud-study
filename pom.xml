@@ -21,6 +21,7 @@
         <module>cloud-consumer-order-feign</module>
         <module>cloud-provider-payment-hystrix</module>
         <module>cloud-consumer-order-hystrix</module>
+        <module>cloud-gateway</module>
     </modules>
 
     <properties>
