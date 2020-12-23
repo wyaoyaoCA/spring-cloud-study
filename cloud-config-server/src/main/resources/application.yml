@@ -8,10 +8,12 @@ spring:
     config:
       server:
         git:
-          uri: git@gitee.com:wangyaoyao93/config-repository.git
+          uri: https://gitee.com/wangyaoyao93/config-repository.git
           #搜索目录
           search-paths:
             - config-repository
+          #username: xxxxx
+          #password: xxxxxxx
       #读取分值
       label: master
 eureka:
