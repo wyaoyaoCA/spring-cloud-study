@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-cloud-config-client
+  cloud:
+    config:
+      label: master	#分支名称
+      name: config	#配置文件名称
+      profile: dev	#读取后缀名称 master分支上的config-dev.yml文件
+      #localhost:3344/master/config-dev.yml
+      uri: http://localhost:3344
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/

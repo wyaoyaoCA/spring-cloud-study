@@ -23,6 +23,7 @@
         <module>cloud-consumer-order-hystrix</module>
         <module>cloud-gateway</module>
         <module>cloud-config-server</module>
+        <module>cloud-config-client</module>
     </modules>
 
     <properties>
