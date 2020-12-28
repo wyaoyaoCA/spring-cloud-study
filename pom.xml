@@ -24,6 +24,8 @@
         <module>cloud-gateway</module>
         <module>cloud-config-server</module>
         <module>cloud-config-client</module>
+        <module>cloud-provider-payment-nacos</module>
+        <module>cloud-consumer-order-nacos</module>
     </modules>
 
     <properties>
