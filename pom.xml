@@ -26,6 +26,7 @@
         <module>cloud-config-client</module>
         <module>cloud-provider-payment-nacos</module>
         <module>cloud-consumer-order-nacos</module>
+        <module>cloud-config-client-nacos</module>
     </modules>
 
     <properties>
